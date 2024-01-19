@@ -142,7 +142,7 @@ section{
 
 }
 
-.nav-bar a[href="projects.html"] {
+.nav-bar a[href="about.html"] {
     color: rgb(190, 234, 136);;
 }
 
@@ -328,6 +328,8 @@ section{
        padding: 25px 0 ;
        flex-basis: 100%;
        text-align: center;
+       color: white;
+       text-decoration: none;
 
     }
 

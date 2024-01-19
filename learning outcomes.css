@@ -1795,6 +1795,8 @@ section{
        padding: 25px 0 ;
        flex-basis: 100%;
        text-align: center;
+       color: white;
+       text-decoration: none;
 
     }
 
