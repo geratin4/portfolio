@@ -436,7 +436,7 @@ h1 {
         display: block;
         width: 50px;
         height: 50px;
-        background-image: url(../assets/images/menu-burger.png),url(../assets/images/cross.png);
+        background-image: url(./assets/images/menu-burger2.png),url(./assets/images/cross2.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center,center left 50px;
