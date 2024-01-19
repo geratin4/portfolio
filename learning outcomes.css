@@ -1,0 +1,2348 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+body {
+
+    background-color: black;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./assets/fonts/Montserrat-Regular.ttf);
+}
+
+section{
+
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    color: white;
+    font-family: montserrat;
+}
+
+.container{
+
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+
+}
+
+/* NAV BAR */
+
+
+.nav-bar{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    font-family: montserrat ;
+}
+
+.brand-name {
+    margin: 0;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    font-family: montserrat ;
+}
+
+
+.nav-bar h1 {
+
+    list-style: none;
+    font-size: xx-large;
+    font-family:montserrat ;
+    color: aliceblue;
+    display: flex;
+    justify-content: left;
+    margin-left: 3px;
+
+}
+
+.nav-bar ul {
+
+    
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+.nav-bar li{
+
+
+    margin-right: 15px;
+    font-family:montserrat ;
+    
+}
+
+.nav-bar a {
+
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    font-family:montserrat;
+    font-size: larger;
+    cursor: pointer;
+
+
+}
+
+.nav-bar a[href="learning outcomes.html"] {
+    color: rgb(190, 234, 136);;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 5px 0;
+}
+
+/* responsive navbar desktop START */
+
+.responsive-menu, .menu-btn{
+
+    display: none;
+
+
+}
+
+/* responsive navbar desktop end */
+
+
+/* container */
+
+.container{
+
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+/* learning outcomes */
+
+.learning-outcomes{
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learning-outcomes h1{
+
+    color: rgb(210, 252, 216);
+    font-size: 80px;
+
+}
+
+
+
+
+
+/* proffesional skills 1 */
+
+.proffesionalskills1{
+
+    background-color: rgb(0, 0, 0);
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.proffesionalskills1 h2 {
+
+    color: rgb(210, 252, 216);
+    /* font-weight: 800; */
+    font-size: 65px;
+    margin: 25px;
+    
+}
+
+.outcome {
+    width: 700px;
+    height: 150px;
+    /* background-color: red; */
+}
+
+.outcome p {
+
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+
+}
+
+.outcome h3{
+
+    text-align: center;
+    font-size: 30px;
+}
+
+.proof{
+    /* background-color: blue; */
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.example{
+    width: 450px;
+    height: 350px;
+    /* background-color: rgb(13,14,12); */
+    margin-right: 15%;
+}
+
+.example p {
+    text-align: left;
+    font-size: 16px ;
+}
+
+
+.example ul {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.example li{
+
+    list-style: none;
+    font-family: Cabin Sketch;
+    margin: 10px;
+
+}
+
+.example a {
+
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    font-family:Cabin Sketch ;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(190, 234, 136);
+    transition:transform 0.2s ease-out ;
+}
+
+.example a:hover {
+
+    transform: translateY(-5px);
+}
+   
+
+ .figure1{
+    width: 250px;
+    height: 350px;
+    background-color: aliceblue;
+}
+
+.figure1 img {
+    height: 100%;
+    width:100%;
+    cursor: pointer;
+}
+
+
+
+
+
+/* proffesional skills 2 */
+
+.proffesionalskills2{
+
+    background-color: rgb(0, 0, 0);
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+
+}
+
+.outcome2 {
+    width: 700px;
+    height: 170px;
+    /* background-color: red; */
+}
+
+.outcome2 p {
+
+    font-size: 22px;
+    text-align: center;
+    font-style: italic;
+}
+
+
+.proffesionalskills2 h3{
+
+    text-align: center;
+    font-size: 28px;
+
+}
+
+
+
+.example2{
+    width: 700px;
+    height: 170px;
+    /* background-color: rgb(90, 135, 46); */
+    
+
+}
+
+.example2 p {
+    text-align: left;
+    font-size: 16px ;
+    font-style: normal;
+}
+
+
+.example2 ul {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.example2 li{
+
+    list-style: none;
+    font-family: Cabin Sketch;
+    margin: 10px;
+
+}
+
+.example2 a {
+
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    font-family:Cabin Sketch ;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(190, 234, 136);
+    transition:transform 0.2s ease-out ;
+}
+
+.example2 a:hover {
+
+    transform: translateY(-5px);
+}
+
+.images-pf2{
+
+    width: 75%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.image-pf2 {
+    width: 500px;
+    height: 200px;
+    margin: 55px;
+    cursor: pointer; 
+}
+
+
+
+.image-pf2 img {
+
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+
+
+/* proffesional skills 3 */
+
+
+.proffesionalskills3{
+
+    background-color: rgb(0, 0, 0);
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.proffesionalskills3 h3{
+
+    text-align: center;
+    font-size: 26px;
+
+}
+
+.proffesionalskills3 p {
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.outcome3 {
+    width: 700px;
+    height: 150px;
+    margin-bottom: 9%;
+}
+
+
+.example3{
+    width: 450px;
+    height: 370px;
+    margin-left: 15%;
+
+}
+
+.example3 p {
+    text-align: left;
+    font-size: 16px ;
+}
+
+
+.example3 ul {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.example3 li{
+
+    list-style: none;
+    font-family: Cabin Sketch;
+    margin: 10px;
+
+}
+
+.example3 a {
+
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    font-family:Cabin Sketch ;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(190, 234, 136);
+    transition:transform 0.2s ease-out ;
+}
+
+.example3 a:hover {
+
+    transform: translateY(-5px);
+}
+
+
+.figure3{
+    width: 320px;
+    height: 320px;
+   
+
+}
+
+.figure3 img {
+    height: 100%;
+    width:100%;
+    cursor: pointer;
+}
+
+
+/* proffesional skills 4 */
+
+.proffesionalskills4{
+
+    background-color: rgb(0, 0, 0);
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    
+}
+
+.proffesionalskills4 h3{
+
+    text-align: center;
+    font-size: 26px;
+
+}
+
+.outcome4 p {
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.outcome4 {
+    width: 800px;
+    height: 120px;
+   
+}
+
+.example4{
+    width: 800px;
+    height: 230px;
+    
+    
+
+}
+
+.example4 p {
+    text-align: left;
+    font-size: 16px ;
+}
+
+
+.example4 ul {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.example4 li{
+
+    list-style: none;
+    font-family: Cabin Sketch;
+    margin: 10px;
+
+}
+
+.example4 a {
+
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    font-family:Cabin Sketch ;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(190, 234, 136);
+    transition:transform 0.2s ease-out ;
+}
+
+.example4 a:hover {
+
+    transform: translateY(-5px);
+}
+
+.images{
+
+    width: 800px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 20px;
+    
+}
+
+.image1 {
+    width: 300px;
+    height: 200px;
+  
+    cursor: pointer; 
+}
+
+.image2 {
+    width: 300px;
+    height: 200px;
+    cursor: pointer; 
+}
+
+.image1 img {
+
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+.image2 img {
+
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    
+}
+
+/* technical skills 1 */
+
+
+
+.technicalskills1{
+
+    background-color: rgb(0, 0, 0);
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    row-gap: 25px;
+    
+}
+
+.technicalskills1 h2 {
+
+    color: rgb(210, 252, 216);
+    font-size: 60px;
+  
+    
+}
+
+.tech-outcome {
+    width: 800px;
+    height: 150px;
+    
+}
+
+.technicalskills1 p {
+    font-size: 22px;
+}
+
+.tech-outcome p {
+
+    font: 22px;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.tech-outcome h3{
+
+    text-align: center;
+    font-size: 26px;
+    
+}
+
+.tech-example{
+    width: 800px;
+    height: 250px;
+    
+}
+
+.tech-example p {
+    text-align: left;
+    font-size: 16px ;
+}
+
+
+.tech-example ul {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tech-example li{
+
+    list-style: none;
+    font-family: Cabin Sketch;
+    margin: 10px;
+
+}
+
+.tech-example a {
+
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    font-family:Cabin Sketch ;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(190, 234, 136);
+    transition:transform 0.2s ease-out ;
+}
+
+.tech-example a:hover {
+    transform: translateY(-5px);
+}
+
+
+
+/* technical skills 2 */
+
+.technicalskills2{
+
+    background-color: rgb(0, 0, 0);
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    
+}
+
+.tech-outcome2 h3{
+
+    text-align: center;
+    font-size: 26px;
+
+}
+
+
+.tech-outcome2 {
+    width: 800px;
+    height: 150px;
+}
+
+.tech-outcome2 p {
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.tech-example2{
+    width: 800px;
+    height: 230px;
+    
+}
+
+.tech-example2 p {
+    text-align: left;
+    font-size: 16px ;
+}
+
+
+.tech-example2 ul {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tech-example2 li{
+
+    list-style: none;
+    font-family: Cabin Sketch;
+    margin: 10px;
+
+}
+
+.tech-example2 a {
+
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    font-family:Cabin Sketch ;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(190, 234, 136);
+    transition:transform 0.2s ease-out ;
+}
+
+.tech-example2 a:hover {
+
+    transform: translateY(-5px);
+}
+
+.tech-images{
+
+    width: 800px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 25px;
+   
+}
+
+.tech-image1 {
+    width: 200px;
+    height: 200px;
+    
+    
+}
+
+.tech-image2{
+    width: 200px;
+    height: 200px;
+}
+
+.tech-image1 img {
+
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+.tech-image2 img {
+
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    
+}
+
+
+
+/* technical skills 3 */
+
+.techicalskills3{
+
+    background-color: rgb(0, 0, 0);
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.proffesionalskills1 h2 {
+
+    color: rgb(210, 252, 216);
+    /* font-weight: 800; */
+    font-size: 65px;
+    margin: 25px;
+    
+}
+
+.tech-outcome3 {
+    width: 700px;
+    height: 150px;
+    /* background-color: red; */
+}
+
+.tech-outcome3 p {
+
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+
+}
+
+
+
+.tech-outcome3 h3{
+
+    text-align: center;
+    font-size: 30px;
+}
+
+.proof{
+    /* background-color: blue; */
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-example3{
+    width: 450px;
+    height: 350px;
+    /* background-color: rgb(13,14,12); */
+    margin-right: 15%;
+}
+
+.tech-example3 p {
+    text-align: left;
+    font-size: 16px ;
+}
+
+
+.tech-example3 ul {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tech-example3 li{
+
+    list-style: none;
+    font-family: Cabin Sketch;
+    margin: 10px;
+
+}
+
+.tech-example3 a {
+
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    font-family:Cabin Sketch ;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(190, 234, 136);
+    transition:transform 0.2s ease-out ;
+}
+
+.tech-example3 a:hover {
+
+    transform: translateY(-5px);
+}
+   
+
+ .tech-figure3{
+    width: 250px;
+    height: 350px;
+    background-color: aliceblue;
+}
+
+.tech-figure3 img {
+    height: 100%;
+    width:100%;
+    cursor: pointer;
+}
+
+
+/* technical skills 4 */
+
+.techicalskills4{
+
+    background-color: rgb(0, 0, 0);
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    
+}
+
+
+.tech-outcome4 {
+    width: 700px;
+    height: 150px;
+    /* background-color: red; */
+}
+
+.tech-outcome4 p {
+
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+
+}
+
+
+
+.tech-outcome4 h3{
+
+    text-align: center;
+    font-size: 30px;
+}
+
+.tech-example4{
+    width: 800px;
+    height: 230px;
+    
+}
+
+.tech-example4 p {
+    text-align: left;
+    font-size: 16px ;
+}
+
+
+.tech-example4 ul {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tech-example4 li{
+
+    list-style: none;
+    font-family: Cabin Sketch;
+    margin: 10px;
+
+}
+
+.tech-example4 a {
+
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    font-family:Cabin Sketch ;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(190, 234, 136);
+    transition:transform 0.2s ease-out ;
+}
+
+.tech-example4 a:hover {
+
+    transform: translateY(-5px);
+}
+
+.tech-images4{
+
+    width: 800px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 25px;
+   
+}
+
+.image4 {
+    width: 400px;
+    height: 200px;   
+    
+}
+
+.image4 img {
+
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*  Responsive Media  */
+
+@media only screen and (max-width: 910px) {
+
+ /* Responsive Container */
+    .container{
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 100vh;
+        width: 100%;
+    }
+
+    /*  responsive ProSkills 1  */
+    .proffesionalskills1{
+
+        background-color: rgb(0, 0, 0);
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
+        
+        
+    }
+    
+    .proffesionalskills1 h2 {
+    
+        color: rgb(210, 252, 216);
+        font-size: 35px;
+        margin: 15px;
+    
+        
+    }
+    
+    .outcome {
+        width: 700px;
+        height: 150px;
+        /* background-color: aqua; */
+    }
+    
+    .outcome p {
+    
+        text-align: center;
+        font-size: 18px;
+        font-style: italic;
+    
+    }
+    
+    .outcome h3{
+    
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .proof{
+
+        width: 700px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        row-gap: 25px;
+        
+    }
+    
+    .example{
+        width: 700px;
+        height: 180px;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .example p {
+        text-align: center;
+        font-size: 14px ;
+    }
+    
+    
+    .example ul {
+        
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    
+   
+    
+     .figure1{
+        width: 100px;
+        height: 150px;
+        background-color: aliceblue;
+        
+    }
+
+
+ /*  responsive ProSkills 2  */ 
+
+ .proffesionalskills2 {
+
+    row-gap: 10px;
+ }
+
+
+.outcome2 {
+    width: 700px;
+    height: 150px;
+}
+
+.outcome2 p {
+
+    font-size: 17px;
+    text-align: center;
+    /* font-style: italic; */
+}
+
+
+.proffesionalskills2 h3{
+
+    text-align: center;
+    font-size: 20px;
+
+}
+
+
+
+.example2{
+    width: 700px;
+    height: 170px;
+    padding: 5px;
+
+
+}
+
+.example2 p {
+    text-align: center;
+    font-size: 12px ;
+    padding: 5px;
+}
+
+
+.example2 ul {
+    
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.example2 li{
+
+    list-style: none;
+    font-family: Cabin Sketch;
+   
+
+}
+
+
+.images-pf2{
+
+    width: 700px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.image-pf2 {
+    width: 500px;
+    height: 200px;
+    margin: 0;
+    cursor: pointer; 
+}
+
+
+  /* responsive ProSkills 3  */
+
+
+
+    .proffesionalskills3{
+
+        background-color: rgb(0, 0, 0);
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .proffesionalskills3 h3{
+
+        text-align: center;
+        font-size: 20px;
+        padding: 5px;
+
+    }
+
+
+    .outcome3 {
+        width: 700px;
+        height: 150px;
+        margin: 0%;
+
+        
+    }
+
+    .outcome3 p {
+
+        text-align: center;
+        font-size: 18px;
+        font-style: italic;
+        padding: 5px;
+    }
+
+    .example3{
+        width: 700px;
+        height: 230px;
+        margin: 0;
+        
+
+    }
+
+    .example3 p {
+        text-align: center;
+        font-size: 14px ;
+        padding: 5px;
+        font-style: normal;
+    }
+
+
+    .example3 ul {
+        
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .example3 li{
+
+        list-style: none;
+        font-family: Cabin Sketch;
+    
+
+    }
+
+    
+    .figure3{
+        width: 200px;
+        height: 200px;
+    
+
+    }
+
+    .figure3 img {
+        height: 100%;
+        width:100%;
+    }
+
+
+     /* responsive ProSkills 4  */
+
+     .proffesionalskills4{
+
+        background-color: rgb(0, 0, 0);
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .proffesionalskills4 h3{
+    
+        text-align: center;
+        font-size: 20px;
+    
+    }
+    
+    .outcome4 p {
+        text-align: center;
+        font-size: 18px;
+        font-style: italic;
+        padding: 5px;
+    }
+    
+    .outcome4 {
+        width: 800px;
+        height: 100px;
+        
+        
+    }
+    
+    .example4{
+        width: 700px;
+        height: 180px;
+    
+    }
+    
+    .example4 p {
+        text-align: center;
+        font-size: 14px ;
+        font-style: none;
+        padding: 5px;
+    }
+    
+    
+    .example4 ul {
+        
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .example4 li{
+    
+        list-style: none;
+        font-family: Cabin Sketch;
+       
+    }
+    
+    
+    
+    .images{
+    
+        width: 700px;
+        height: 270px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 0;
+        
+    }
+    
+    .image1 {
+        width: 300px;
+        height: 200px;
+        cursor: pointer; 
+    }
+    
+    .image2 {
+        width: 300px;
+        height: 200px;
+        cursor: pointer; 
+    }
+    
+    /*  technical skills 1  */
+    
+    .technicalskills1{
+
+        background-color: rgb(0, 0, 0);
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .technicalskills1 h2 {
+    
+        color: rgb(210, 252, 216);
+        font-size: 35px;
+        margin: 25px;
+        
+    }
+    
+    .tech-outcome {
+        width: 700px;
+        height: 150px;
+    }
+    
+    .technicalskills1 p {
+        font-size: 14px;
+        padding: 5px;
+    }
+    
+    .tech-outcome p {
+    
+        font: 14px;
+        font-style: italic;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    
+    .tech-outcome h3{
+    
+        text-align: center;
+        font-size: 18px;
+        
+    }
+
+
+
+    /*  technical skills 2  */
+    
+    .technicalskills2{
+
+        background-color: rgb(0, 0, 0);
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
+        
+    }
+    
+    .tech-outcome2 h3{
+    
+        text-align: center;
+        font-size: 20px;
+    
+    }
+    
+    
+    .tech-outcome2 {
+        width: 700px;
+        height: 110px;
+
+    }
+    
+    .tech-outcome2 p {
+        text-align: center;
+        font-size: 17px;
+        font-style: italic;
+        padding: 5px;
+
+    }
+    
+    .tech-example2{
+        width: 700px;
+        height: 240px;
+    }
+    
+    .tech-example2 p {
+        text-align: center;
+        font-size: 14px ;
+        padding: 5px;
+    }
+    
+    
+    .tech-example2 ul {
+        
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .tech-example2 li{
+    
+        list-style: none;
+        font-family: Cabin Sketch;
+     
+    
+    }
+    
+
+    .tech-images{
+    
+        width: 800px;
+        height: 270px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+       
+    }
+    
+    .tech-image1 {
+        width: 180px;
+        height: 180px;
+        
+        
+    }
+    
+    .tech-image2{
+        width: 180px;
+        height: 180px;
+    }
+    
+    
+
+
+    /*  technical skills 3  */
+
+    .techicalskills3{
+
+        background-color: rgb(0, 0, 0);
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 5px;
+        
+    }
+    
+   
+    
+    .tech-outcome3 {
+        width: 700px;
+        height: 150px;
+    }
+    
+    .tech-outcome3 p {
+    
+        text-align: center;
+        font-size: 18px;
+        font-style: italic;
+        padding: 5px;
+    
+    }
+    
+    
+    
+    .tech-outcome3 h3{
+    
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .proof{
+   
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .tech-example3{
+        width: 700px;
+        height: 220px;
+        margin: 0;
+    }
+    
+    .tech-example3 p {
+        text-align: center;
+        font-size: 14px ;
+        padding: 5px;
+    }
+    
+    
+    .tech-example3 ul {
+        
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+       
+    
+     .tech-figure3{
+        width: 100px;
+        height: 150px;
+        background-color: aliceblue;
+    }
+    
+    .tech-figure3 img {
+        height: 100%;
+        width:100%;
+        cursor: pointer;
+    }
+
+
+
+    /*  technical skills 4  */
+
+    .techicalskills4{
+
+        background-color: rgb(0, 0, 0);
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    
+    .tech-outcome4 {
+        width: 700px;
+        height: 150px;
+        /* background-color: red; */
+    }
+    
+    .tech-outcome4 p {
+    
+        text-align: center;
+        font-size: 18px;
+        font-style: italic;
+    
+    }
+    
+    
+    
+    .tech-outcome4 h3{
+    
+        text-align: center;
+        font-size: 20px;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 795px) {
+
+    .container{
+
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 100vh;
+        width: 100%;
+    
+    }
+
+
+    /* Responsive  learning outcomes  */
+    .learning-outcomes{
+
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .learning-outcomes h1{
+
+        color: rgb(210, 252, 216);
+        font-size: 60px;
+
+    }
+
+    .nav-bar{
+
+        display: none;
+    }
+
+     /* responsive menu start  */
+
+     .menu-btn {
+
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-image: url(../assets/images/menu-burger.png),url(../assets/images/cross.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center,center left 50px;
+    }
+
+    .responsive-menu {
+
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 900;
+        background-color: black;
+    }
+
+    .responsive-menu ul {
+
+        width: 100%;
+        height: calc(100vh - 60px);
+        padding-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+
+    }
+
+    .responsive-menu ul li {
+
+        flex-basis: 100%;
+        /* border-top: 2px solid white; */
+
+    }
+
+    .responsive-menu ul li a {
+
+       display: block;
+       height: 100%;
+       font-size: 20px;
+       font-family: montserrat;
+       padding: 25px 0 ;
+       flex-basis: 100%;
+       text-align: center;
+
+    }
+
+    .responsive-menu a {
+        
+        color: aliceblue;
+        cursor: pointer;
+        text-decoration: none;
+
+    }
+
+    /* responsive menu end  */
+
+       /*  responsive ProSkills 1  */
+   
+    
+    .proffesionalskills1 h2 {
+    
+        color: rgb(210, 252, 216);
+        font-size: 35px;
+        margin: 15px;
+    
+        
+    }
+    
+    .outcome {
+        width: 400px;
+        height: 150px;
+        /* background-color: aqua; */
+    }
+    
+    .outcome p {
+    
+        text-align: center;
+        font-size: 18px;
+        font-style: italic;
+    
+    }
+    
+    .outcome h3{
+    
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .proof{
+
+        width: 700px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        row-gap: 25px;
+        
+    }
+    
+    .example{
+        width: 400px;
+        height: 280px;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+
+    .example a {
+        font-size: 23px;
+    }
+    
+ /*  responsive ProSkills 2  */ 
+
+
+.outcome2 {
+    width: 400px;
+    height: 150px;
+}
+
+
+
+.proffesionalskills2 h3{
+
+    text-align: center;
+    font-size: 25px;
+
+}
+
+
+
+.example2{
+    width: 400px;
+    height: 170px;
+    padding: 5px;
+
+
+}
+
+
+
+.example2 ul {
+    
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.example2 li{
+
+    list-style: none;
+    font-family: Cabin Sketch;
+   
+
+}
+
+  /* responsive ProSkills 3  */
+
+
+
+    .proffesionalskills3 h3{
+
+        text-align: center;
+        font-size: 25px;
+        padding: 5px;
+
+    }
+
+
+    .outcome3 {
+        width: 400px;
+        height: 250px;
+        margin: 0%;
+
+        
+    }
+
+    .outcome3 p {
+
+        text-align: center;
+        font-size: 18px;
+        font-style: italic;
+        padding: 5px;
+    }
+
+    .example3{
+        width: 400px;
+        height: 230px;
+        margin: 0;
+        
+
+    }
+
+    .example3 p {
+        text-align: center;
+        font-size: 14px ;
+        padding: 5px;
+        font-style: normal;
+    }
+
+
+    .example3 a {
+
+        font-size: 23px;
+        
+
+    }
+
+
+     /* responsive ProSkills 4  */
+
+   
+    .proffesionalskills4 h3{
+    
+        text-align: center;
+        font-size: 25px;
+    
+    }
+    
+    .outcome4 p {
+        text-align: center;
+        font-size: 18px;
+        font-style: italic;
+        padding: 5px;
+    }
+    
+    .outcome4 {
+        width: 400px;
+        height: 200px;
+        
+        
+    }
+    
+    .example4{
+        width: 400px;
+        height: 180px;
+    
+    }
+    
+    .example4 p {
+        text-align: center;
+        font-size: 14px ;
+        font-style: none;
+        padding: 5px;
+    }
+    
+
+    
+    .example4 a{
+    
+       font-size: 23px;
+       
+    }
+    
+    
+    
+    .images{
+    
+        width: 700px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 25px;
+        margin: 0;
+        
+    }
+    
+    .image1 {
+        width: 200px;
+        height: 100px;
+        cursor: pointer; 
+    }
+    
+    .image2 {
+        width: 200px;
+        height: 100px;
+        cursor: pointer; 
+    }
+    
+    /*  technical skills 1  */
+    .technicalskills1 {
+
+        justify-content: flex-start;
+    }
+
+    .technicalskills1 h2 {
+    
+        color: rgb(210, 252, 216);
+        font-size: 40px;
+        
+    }
+    
+    .tech-outcome {
+        width: 450px;
+        height: 150px;
+    }
+    
+    .technicalskills1 p {
+        font-size: 14px;
+        padding: 5px;
+    }
+    
+    .tech-outcome p {
+    
+        font: 14px;
+        font-style: italic;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    
+    .tech-outcome h3{
+    
+        text-align: center;
+        font-size: 25px;
+        
+    }
+
+    .tech-example{
+        width: 450px;
+        height: 240px;
+    }
+
+    
+    .tech-example a {
+    
+        font-size: 23px;
+     
+    }
+
+    .tech-example ul {
+    
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tech-example li{
+
+        list-style: none;
+        font-family: Cabin Sketch;
+    
+
+    }
+
+
+    /*  technical skills 2  */
+    
+    
+    .tech-outcome2 h3{
+    
+        text-align: center;
+        font-size: 25px;
+    
+    }
+    
+    
+    .tech-outcome2 {
+        width: 400px;
+        height: 210px;
+
+    }
+    
+    
+    
+    .tech-example2{
+        width: 400px;
+        height: 240px;
+    }
+
+    
+    .tech-example2 a {
+    
+        font-size: 23px;
+     
+    }
+    
+
+    .tech-images{
+    
+        width: 800px;
+        height: 270px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+
+       
+    }
+    
+    /*  technical skills 3  */
+    .techicalskills3{
+
+        row-gap: 60px;
+        /* justify-content: flex-start; */
+    }
+    .tech-outcome3 {
+        width: 500px;
+        height: 150px;
+        
+    }
+    
+    .tech-outcome3 p {
+    
+        text-align: center;
+        font-size: 18px;
+        font-style: italic;
+        padding: 5px;
+    
+    }
+    
+    
+    
+    .tech-outcome3 h3{
+    
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .proof{
+   
+        width: 100%;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .tech-example3{
+        width: 500px;
+        height: 350px;
+
+    }
+    
+    .tech-example3 p {
+        text-align: center;
+        font-size: 12px ;
+        padding: 5px;
+    }
+    
+    
+    .tech-example3 a { 
+        
+        font-size: 23px;
+      
+    }
+    
+       
+    
+     .tech-figure3{
+        width: 200px;
+        height: 250px;
+        background-color: aliceblue;
+    }
+    
+    .tech-figure3 img {
+        height: 100%;
+        width:100%;
+        cursor: pointer;
+    }
+
+
+
+    /*  technical skills 4  */
+    
+    .tech-outcome4 {
+        width: 400px;
+        height: 150px;
+        /* background-color: red; */
+    }
+    
+    .tech-outcome4 p {
+    
+        text-align: center;
+        font-size: 18px;
+        font-style: italic;
+    
+    }
+
+    .tech-example4{
+        width: 400px;
+        height: 320px;
+        margin: 0;
+    }
+    
+    .tech-example4 p {
+        text-align: center;
+        font-size: 14px ;
+        padding: 5px;
+    }
+    
+    
+    .tech-example4 a { 
+        
+        font-size: 23px;
+      
+    }
+    
+       
+    
+     .tech-figure4{
+        width: 200px;
+        height: 250px;
+        background-color: aliceblue;
+    }
+    
+    .tech-figure4 img {
+        height: 100%;
+        width:100%;
+        cursor: pointer;
+    }
+
+    
+    
+    
+    .tech-outcome4 h3{
+    
+        text-align: center;
+        font-size: 25px;
+    }
+
+
+
+
+
+    
+}
+
+@media only screen and (max-width: 585px) {
+
+
+    .container{
+
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 100vh;
+        width: 100%;
+    
+    }
+
+
+    /* Responsive  learning outcomes  */
+    .learning-outcomes{
+
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .learning-outcomes h1{
+
+        color: rgb(210, 252, 216);
+        font-size: 40px;
+
+    }
+
+
+    .images-pf2{
+
+        width: 400px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        
+    }
+
+    .image-pf2 {
+        width: 300px;
+        height: 100px;
+        margin: 0;
+        cursor: pointer; 
+}
+
+
+}

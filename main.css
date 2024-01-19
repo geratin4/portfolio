@@ -1,0 +1,666 @@
+@font-face{
+
+    font-family: titilium;
+    src: url(/assets/fonts/titilium.ttf);
+
+}
+
+
+@font-face{
+
+    font-family: neon;
+    src: url(./projects/assets/fonts/neon.ttf);
+}
+
+
+
+
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+  
+}
+
+body{
+
+    background-color: black;
+    cursor: default;
+   
+}
+
+
+
+/* NAV BAR */
+
+
+/* SKETCHES*/
+
+
+
+.content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
+.sketch1{
+
+    position: relative;
+    
+    /*background-color: gray;*/
+    /* background-color: blue; */
+
+    width: 300px;
+    height: 200px;
+    border: 3px;
+    margin-top: 1.5cm;
+    /* top: 50%;
+    left: 35%; */
+    margin-bottom: 1cm;
+    
+
+}
+
+.sketch1 img {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* top: 20px; */
+    /* left: 20px; */
+}
+
+.sketch2{
+
+    position: relative;
+    /* background-color: aqua; */
+    /* background-color: transparent; */
+    width: 200px;
+    height: 200px;
+    /* top: 50%;
+    left: 43%; */
+    /* margin-top: 10px; */
+}
+
+.sketch2 img{
+
+    position: absolute;
+    height: 100%;
+    width:100%;
+
+}
+
+.sketch3 {
+
+    position: relative;
+   /* background-color: beige; */
+    background-color: transparent;
+    width: 600px;
+    height: 400px;
+    left: 70%;
+    top: 60%;
+}
+
+.sketch3 img{
+
+    position: absolute;
+    height:100%;
+    width: 100%;
+    left: 50px;
+}
+
+
+
+/* NAME PLUS INTRO */
+
+.intro{
+
+    /*background-color: red; */
+    background-color: transparent;
+    position: relative;
+    width: auto;
+    height: 150px;
+    text-align: center;
+    color: aliceblue;
+    
+   
+}
+
+.intro h1 {
+
+    font-family: Cabin Sketch;
+    font-size: 75px;
+}
+.intro p{
+
+    font-family: Cabin Sketch;
+    font-weight: 50;
+    font-size: 25px;
+
+}
+
+/* list for directory */
+
+.lista{
+
+    /* background-color: cadetblue; */
+    /* background-color: transparent; */
+    
+    height: 50px;
+    justify-content: center;
+    justify-content: center;
+   
+
+}
+
+.lista ul {
+
+    display: flex;
+    
+    /* margin-bottom: 10px; */
+}
+
+.lista li{
+
+
+    /* margin: 25px; */
+    list-style: none;
+    font-size: larger;
+    font-family:Cabin Sketch;
+    margin-left: 15px;
+}
+
+.lista a {
+
+    display: block;
+    text-decoration: none;
+    font-family:Cabin Sketch ;
+    font-size: 45px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(190, 234, 136);
+    /* paint-order: stroke fill; */
+   
+
+
+
+    transition:transform 0.2s ease-out ;
+
+}
+
+.lista a:hover {
+
+
+
+    transform: translateY(-5px);
+}
+
+/* page transition */
+
+.transition-fade {
+
+    transition: .3s;
+    opacity: 5;
+}
+
+html.is-animating .transition-fade{
+
+    opacity: 0;
+    transform: translateY(-100px);
+}
+
+/* ABOUT ME HTML */
+
+
+.about-me{
+
+    background-color:transparent;
+    position: relative;
+    width: auto;
+    height: 100px;
+    text-align: center;
+    color: aliceblue;
+    margin-top: 30px;
+  
+}
+
+.about-me h2{
+
+    font-family: Cabin Sketch;
+    font-weight: 50;
+    
+    font-size: 2.5cm;
+}
+
+
+.parent{
+
+    background-color: transparent;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pic {
+
+    background-color: transparent;
+    height: 400px;
+    width: 300px;
+    box-shadow: 7px 7px 5px whitesmoke;
+    
+}
+
+.pic img{
+
+    max-width: 100%;
+
+    max-height: 100%;
+    
+      
+}
+
+
+.info {
+    
+    background-color: transparent;
+    height: 400px;
+    width: 500px;
+    font-size: 1cm;
+    font-family: titilium;
+    font-weight: 50;
+    color: aliceblue;
+    
+}
+
+.chillshroom{
+
+    background-color: transparent;
+
+    height: 270px;
+    width: 350px;
+    margin-left: 180px;
+    margin-bottom: 100px;
+}
+
+.chillshroom img{
+
+    width: 100%;
+
+    height: auto;
+}
+
+
+
+/* NAV BARRRRRRR */
+
+
+
+.nav-bar{
+
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav-bar h1 {
+
+    list-style: none;
+    font-size: xx-large;
+    font-family:titilium ;
+    color: aliceblue;
+    display: flex;
+    justify-content: left;
+    margin-left: 3px;
+
+}
+
+.nav-bar ul {
+
+    
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+.nav-bar li{
+
+
+    margin: 8px;
+    list-style: none;
+    font-size: larger;
+    font-family:titilium ;
+    
+}
+
+.nav-bar a {
+
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    font-family:titilium ;
+    font-size: larger;
+
+    transition:transform 0.2s ease-out ;
+
+}
+.nav-bar a:hover {
+
+    text-decoration: underline;
+    color: aliceblue;
+    width: 100%;
+
+    transform: translateY(-5px);
+}
+
+
+/* SCHOOL WORK !!!!!!!! */
+/*
+.abtme-container{
+
+    width: 100%;
+    height: 700px;
+    background-color: transparent;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+.in-container{
+
+    background-color: transparent;
+    box-shadow: 5px 5px 20px whitesmoke;
+    height: 400px;
+    overflow: hidden;
+    width: 300px;
+   
+    
+}
+
+
+.in-container img {
+
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.in-container:hover {
+    cursor: pointer;
+}
+
+
+
+.text {
+
+    height: 60px;
+    width: 300px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.697);
+    bottom: 260px;
+    color: aliceblue;
+}
+
+.text h1 {
+
+    font-family:Cabin Sketch ;
+
+    text-align: center;
+    
+    margin-top: 10px;
+
+    
+}
+
+.text p {
+
+    font-family:Cabin Sketch ;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.text a {
+
+    font-family:Cabin Sketch ;
+    visibility: hidden;
+    opacity: 0;
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none;
+    transition:transform 0.2s ease-out ;
+    margin-left: 100px;
+
+
+}
+
+.text a:hover {
+
+    text-decoration: underline;
+    color: aliceblue;
+    width: 100%;
+
+    transform: translateY(-5px);
+}
+
+.in-container:hover .text {
+
+    height: 160px;
+    bottom: 260px;
+    background: rgba(0, 0, 0, 0.816);
+    
+}
+
+.in-container:hover p {
+
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.in-container:hover a {
+
+    visibility: visible;
+    opacity: 1;
+
+}
+
+*/
+
+/* SLIDE SHOW */
+
+.selected-work {
+
+    box-sizing:border-box;
+    margin-top: 150px;
+}
+
+.prjct-title{
+
+    color: azure;
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
+
+
+
+.carousel{
+    
+    width: 100%;
+    height: 600px;
+    position: relative;
+    
+    
+}
+
+.carousel ul {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slides{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 100ms opacity ease-in-out;
+    text-align: center;
+    
+}
+
+.slides img{
+
+    display: block;
+    height: 100%;
+    margin: auto;
+    object-position: center;
+}
+
+.slides[data-active]{
+
+    opacity: 1;
+    
+    
+}
+
+.slide-btn {
+
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 12px 28px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.991);
+
+}
+
+
+
+
+.carousel-btn {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+    color: rgba(245, 245, 245, 0.502);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+   
+}
+
+.carousel-btn:hover {
+
+    color: white;
+    background-color:rgba(0, 0, 0, 0.652) ;
+}
+
+
+.carousel-btn.prev{
+
+    left: 30rem;
+}
+
+.carousel-btn.next{
+
+    right: 30rem;
+}
+
+
+
+
+
+/* CONTACT ME !!!!! */
+
+.about-me  a {
+
+    font-family:Playpen+sans ;
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none;
+    font-size: x-large;
+
+}
+
+.about-me a:hover {
+
+    text-decoration: underline;
+    color: aliceblue;
+    width: 100%;
+
+    transform: translateY(-5px);
+}
+
+.gato {
+
+    background-color: transparent;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+
+}
+
+.gato-img{
+
+    background-color: transparent;
+    width: 300px;
+    height: 370px;
+    
+}
+
+.gato-img img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/*SNOW WORLD */
+
+.learning-nav {
+
+    width: 100%;
+    height: 50px;
+    background-color: aliceblue;
+
+}
+
+.about-snowworld {
+    width: 100%;
+    height: 75px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about-snowworld h2 {
+
+    font-size: 1.5cm;
+    color: aliceblue;
+    font-family: titilium;
+}

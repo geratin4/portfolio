@@ -1,0 +1,76 @@
+body{
+
+    margin: 0;
+}
+
+.hero{
+
+    width: 1000px;  
+    height: 350px;
+    overflow: hidden;
+    position: absolute;
+    background: transparent
+    
+}
+
+.slides{
+
+    display: flex;
+    width: 300%;
+}
+
+/*  */
+.image{
+    transition: 0.5s ease;
+}
+
+.navigator {
+
+    display: flex;
+    position: absolute;
+    top: 300px;
+    right: 450px;
+}
+
+.bar{
+
+    height: 4px;
+    width: 50px;
+    background: #000000;
+    border: solid;
+
+}
+
+.bar:hover{
+
+    background: #FFFF;
+
+}
+
+input[type=radio] {
+
+    visibility: hidden;
+    position: absolute;
+}
+
+#btn1:checked ~ .first {
+
+    margin-left: 0px;
+
+}
+
+#btn2:checked ~ .first {
+
+    margin-left: -1000px;
+
+}
+
+#btn3:checked ~ .first {
+
+    margin-left: -2000px;
+
+}
+
+
+
+
