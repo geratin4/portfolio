@@ -1,0 +1,240 @@
+@font-face{
+
+    font-family: titilium;
+    src: url(/assets/fonts/titilium.ttf);
+
+}
+
+
+
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+   
+}
+
+body{
+
+    background-color: rgb(34, 34, 34);
+   
+}
+
+/* NAV BARRRRRRR */
+
+
+
+.nav-bar{
+
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav-bar h1 {
+
+    list-style: none;
+    font-size: xx-large;
+    font-family:titilium ;
+    color: aliceblue;
+    display: flex;
+    justify-content: left;
+    margin-left: 3px;
+
+}
+
+.nav-bar ul {
+
+    
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+.nav-bar li{
+
+
+    margin: 8px;
+    list-style: none;
+    font-size: larger;
+    font-family:titilium ;
+    
+}
+
+.nav-bar a {
+
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    font-family:titilium ;
+    font-size: larger;
+
+    transition:transform 0.2s ease-out ;
+
+}
+.nav-bar a:hover {
+
+    text-decoration: underline;
+    color: aliceblue;
+    width: 100%;
+
+    transform: translateY(-5px);
+}
+
+
+.to-main{
+
+    text-decoration: underline;
+    color: aliceblue;
+    
+}
+
+.to-main h3{
+    
+    font-family:titilium ;
+  
+
+}
+
+
+
+.to-main:hover {
+
+    text-decoration: underline;
+    color: aliceblue;
+    width: 100%;
+
+
+
+}
+
+
+.about-me{
+
+    background-color:transparent;
+    position: relative;
+    width: auto;
+    height: 100px;
+    text-align: center;
+    color: aliceblue;
+    margin-top: 30px;
+}
+
+.about-me h2{
+
+    font-family: Cabin Sketch;
+    font-weight: 50;
+    
+    font-size: 2.5cm;
+}
+
+
+/* SLIDE SHOW */
+
+.selected-work {
+
+    box-sizing:border-box;
+    margin-top: 150px;
+}
+
+.prjct-title{
+
+    color: azure;
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
+
+
+
+.carousel{
+    
+    width: 100%;
+    height: 600px;
+    position: relative;
+    
+    
+}
+
+.carousel ul {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slides{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 100ms opacity ease-in-out;
+    text-align: center;
+    
+}
+
+.slides img{
+
+    display: block;
+    height: 100%;
+    margin: auto;
+    object-position: center;
+}
+
+.slides[data-active]{
+
+    opacity: 1;
+    
+    
+}
+
+.slide-btn {
+
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 12px 28px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.991);
+
+}
+
+
+
+
+.carousel-btn {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+    color: rgba(245, 245, 245, 0.502);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+   
+}
+
+.carousel-btn:hover {
+
+    color: white;
+    background-color:rgba(0, 0, 0, 0.652) ;
+}
+
+
+.carousel-btn.prev{
+
+    left: 30rem;
+}
+
+.carousel-btn.next{
+
+    right: 30rem;
+}
+

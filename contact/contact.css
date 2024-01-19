@@ -1,0 +1,240 @@
+
+
+@font-face{
+
+    font-family: montserrat;
+    src: url(../assets/fonts/Montserrat-Regular.ttf);
+
+}
+
+
+
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+   
+}
+
+body{
+
+    background-color: black;
+    margin: 0;
+    font-family: montserrat;
+   
+}
+
+
+@media screen and (max-width: 600px) {
+    header {
+        padding: 5px;
+    }
+
+    .brand-name {
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .gato-img img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 335px) {
+
+    .gato-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-me{
+
+        background-color:transparent;
+        position: relative;
+        width: auto;
+        height: 100px;
+        text-align: center;
+        color: aliceblue;
+        margin-top: 30px;
+    }
+    
+    .about-me h2{
+    
+        font-family: Cabin Sketch;
+        font-weight: 50;
+        
+        font-size: 50px;
+    }
+    
+    
+    
+    .about-me  a {
+    
+        font-family:montserrat;
+        color: aliceblue;
+        text-align: center;
+        text-decoration: none;
+        font-size: x-large;
+    
+    }
+    
+    .about-me a:hover {
+    
+        text-decoration: underline;
+        color: aliceblue;
+        width: 100%;
+    
+        transform: translateY(-5px);
+    }
+
+}
+
+
+
+/* NAV BARRRRRRR */
+
+
+.nav-bar{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    font-family: montserrat ;
+}
+
+.brand-name {
+    margin: 0;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    font-family: montserrat ;
+}
+
+
+.nav-bar h1 {
+
+    list-style: none;
+    font-size: xx-large;
+    font-family:montserrat ;
+    color: aliceblue;
+    display: flex;
+    justify-content: left;
+    margin-left: 3px;
+
+}
+
+.nav-bar ul {
+
+    
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+.nav-bar li{
+
+
+    margin-right: 15px;
+    font-family:montserrat ;
+    
+}
+
+.nav-bar a {
+
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    font-family:montserrat;
+    font-size: larger;
+    cursor: pointer;
+
+}
+
+.nav-bar a[href="contact.html"] {
+    color: rgb(190, 234, 136);;
+}
+
+
+/*Contact ME */ 
+
+.about-me{
+
+    background-color:transparent;
+    position: relative;
+    width: auto;
+    height: 100px;
+    text-align: center;
+    color: rgb(210, 252, 216);
+
+    margin-top: 30px;
+}
+
+.about-me h2{
+
+    /* font-family: Cabin Sketch; */
+    font-weight: 50;
+    font-family: montserrat;
+    
+    font-size: 2.5cm;
+}
+
+
+
+.about-me  a {
+
+    font-family: Cabin Sketch;
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none;
+    font-size: x-large;
+    color: rgb(190, 234, 136);
+
+}
+
+
+.gato {
+
+    background-color: transparent;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+
+}
+
+.gato-img{
+
+    background-color: transparent;
+    width: 300px;
+    height: 370px;
+    
+}
+
+.gato-img img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+

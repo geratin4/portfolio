@@ -1,0 +1,51 @@
+body{
+    background-color: aqua;
+   
+    
+    
+   
+}
+header {
+    border: 12px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+nav{
+    border: 12px solid rgb(0, 255, 4);
+    display: flex;
+    
+    
+}
+
+main{
+    border: 12px solid rgb(80, 29, 221);
+    display: flex;
+    flex-basis: 20rem;
+    flex-grow: 1;
+    
+    
+   
+  
+    
+    
+    
+}
+aside{
+    border: 12px solid rgb(0, 0, 0);
+    display: flex;
+    flex-basis: 20rem;
+    flex-grow: 1;
+    flex-direction: row
+    
+    
+}
+
+footer{
+    border: 12px solid rgb(255, 255, 255);
+    margin-top: auto;
+
+}

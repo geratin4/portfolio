@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./carousel.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="carousel">
+        <ul class="carousel-list direction-right"  id="carousel-list">
+            <li class="carousel-item  transition-in ">
+                <img src="./img1.jpg" alt="" class="carousel-image">
+            </li>
+
+            <li class="carousel-item">
+                <img src="./img2.jpg" alt="" class="carousel-image">
+            </li>
+
+            <li class="carousel-item">
+                <img src="./img3.jpg" alt="" class="carousel-image">
+            </li>
+
+
+            <li class="carousel-item">
+                <img src="./img4.jpg" alt="" class="carousel-image">
+            </li>
+
+
+            <li class="carousel-item">
+                <img src="./img5.jpg" alt="" class="carousel-image">
+            </li>
+
+              
+        </ul>
+        
+        <nav class="carousel-navigation">
+            <button class="carousel-button carousel-button--previous" id="carousel-previous">previous</button>
+            <button class="carousel-button carousel-button--next" id="carousel-next">next</button>
+        </nav>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+        // UI elements
+        const $list = document.getElementById("carousel-list");
+        const $previous = document.getElementById("carousel-previous");
+        const $next =document.getElementById("carousel-next");
+
+        console.log($list.children);
+
+        // variables
+        const limit =5;
+
+        let index =0;
+        let current= $list.children[index];
+        let previous = current;
+
+        console.log(current);
+
+        //  event listeners 
+        $previous.onclick = function (){
+            // only when index is bigger than one 
+            if (index > 0) {
+
+                $list.classList.remove("direction-right");
+
+                previous=current;
+                previous.remove("transition-in");
+                previous.classList.add("transition-out");
+
+                setTimeout(function(){
+                    previous.classList.remove("transition-out");
+                },500);
+
+                //decrement index 
+                index = index -1;
+                current = $list.children[index];
+                current.classList.add("transition-in");
+
+                console.log("previous",index,current);
+            
+            }
+        };
+
+        // event listeners 
+        $next.onclick = function (){
+            // only when index is  smaller than 5 
+
+            if (index < limit) {
+                previous=current;
+                previous.remove("transition-in");
+                previous.classList.add("transition-out");
+
+                setTimeout(function(){
+                    previous.classList.remove("transition-out");
+                },1000);
+                
+                // increment index 
+                index = index +1;
+                current = $list.children[index];
+                current.classList.add("transition-in");
+                console.log("next",index,current);
+            }
+        };
+        
+
+    </script>
+    
+</body>
+</html>
