@@ -27,31 +27,67 @@ body{
 
 
 @media screen and (max-width: 600px) {
-    header {
-        padding: 5px;
+   
+    .nav-bar{
+
+        display: none;
     }
 
-    .brand-name {
-        font-size: 20px;
+
+    /* responsive menu start  */
+
+    .menu-btn {
+
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-image: url(../assets/images/menu-burger.png),url(../assets/images/cross.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center,center left 50px;
     }
 
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
+    .responsive-menu {
 
-    nav li {
-        margin: 10px 0;
-    }
-
-    main {
-        padding: 10px;
-    }
-
-    .gato-img img {
+        display: none;
+        position: fixed;
         width: 100%;
-        height: auto;
+        height: 100vh;
+        z-index: 900;
+        background-color: black;
     }
+
+    .responsive-menu ul {
+
+        width: 100%;
+        height: calc(100vh - 60px);
+        padding-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+
+    }
+
+    .responsive-menu ul li {
+
+        flex-basis: 100%;
+        /* border-top: 2px solid white; */
+
+    }
+
+    .responsive-menu ul li a {
+
+       display: block;
+       height: 100%;
+       font-size: 20px;
+       font-family: montserrat;
+       padding: 25px 0 ;
+       flex-basis: 100%;
+       text-align: center;
+
+    }
+
+    /* responsive menu end  */
 }
 
 
@@ -109,6 +145,8 @@ body{
 /* NAV BARRRRRRR */
 
 
+/* Nav BAR START  */
+
 .nav-bar{
 
     display: flex;
@@ -121,7 +159,7 @@ body{
 
 .brand-name {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 24px;
     color: #fff;
     text-decoration: none;
     font-family: montserrat ;
@@ -166,11 +204,40 @@ body{
     font-size: larger;
     cursor: pointer;
 
+
 }
 
 .nav-bar a[href="contact.html"] {
     color: rgb(190, 234, 136);;
 }
+
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 5px 0;
+}
+
+
+/* responsive navbar desktop START */
+
+.responsive-menu, .menu-btn{
+
+    display: none;
+
+
+}
+
+/* responsive navbar desktop end */
+
+
 
 
 /*Contact ME */ 
