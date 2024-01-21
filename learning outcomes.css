@@ -97,7 +97,7 @@ section{
 
 }
 
-.nav-bar a[href="learning outcomes.html"] {
+.nav-bar a[href="learning outcomes 2.html"] {
     color: rgb(190, 234, 136);;
 }
 
@@ -147,6 +147,8 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    row-gap: 50px;
 }
 
 .learning-outcomes h1{
@@ -154,6 +156,20 @@ section{
     color: rgb(210, 252, 216);
     font-size: 80px;
 
+}
+
+.book {
+
+
+    width: 600px;
+    height: 500px;
+    background-color: aqua;
+}
+
+.book img {
+
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -1711,6 +1727,11 @@ section{
 
 
 @media only screen and (max-width: 795px) {
+
+    .book {
+
+        display: none;
+    }
 
     .container{
 
